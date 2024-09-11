@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}BRE-FE APP{% endblock %}</title>
+    <!-- Include any CSS or JS files here -->
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; border-bottom: 3px solid transparent; border-image: linear-gradient(to right, #a2e4b9, #099b74); border-image-slice: 1;">
+        <div>
+            <a href="{{ url_for('views.home') }}" style="text-decoration: none; color: inherit;">
+                <h3 style="color: hwb(164 7% 45%); padding-left: 200px;">Business Rules Extraction and Forward Engineering</h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
